@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.huang.videoview.MainActivity">
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="Open" />
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_toLeftOf="@id/button2"
+            android:text="jump" />
+
+        <EditText
+            android:id="@+id/et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/button"
+            />
+
+
+    <com.example.huang.videoview.webview.MeWebView
+
+        android:id="@+id/webView"
+        android:layout_below="@id/et"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Hello World!"/>
+</RelativeLayout>
